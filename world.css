@@ -1,1 +1,113 @@
 /* Add your own styles */
+html {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: aliceblue;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(29, 32, 56);
+    text-align: center;
+    padding: 32px;
+    color: white;
+}
+
+#world {
+    width: 160px;
+    float: left;
+    padding: 8px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+#controls {
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+    padding: 32px;
+}
+
+#result {
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+div label {
+    color: rgb(29, 32, 56);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#country {
+    border: none;
+    border-radius: 4px;
+    width: 85%;
+    padding: 12px;
+}
+
+#lookup, #lookupCt{
+    border: none;
+    border-radius: 4px;
+    background: rgb(15, 116, 116);
+    color: white;
+    font-weight: bolder;
+    padding: 12px;
+    margin-top: 24px;
+}
+
+#lookupCt {
+    background-color: rgb(100, 42, 155);
+}
+
+table {
+    position: absolute;
+    border-color: rgb(29, 32, 56);
+    box-shadow: inset;
+    margin-left: 4%;
+    margin-right: 15%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    background-color: white;
+    color: rgb(29, 32, 56);
+    padding: 8px 12px;
+    width: 360px;
+    border: 0.5px solid  rgb(159, 159, 166);
+    border-left: none;
+
+
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+td {
+    text-align:start;
+    padding: 12px;
+    border-right: 0.5px solid rgb(159, 159, 166);
+    border-bottom: 0.5px solid  rgb(159, 159, 166);
+}
+
+tr {
+    border-bottom: 0.5px solid  rgb(159, 159, 166);
+}
+

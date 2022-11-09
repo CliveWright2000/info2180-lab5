@@ -29,9 +29,9 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
   </tr>
   <?php foreach ($results as $r): ?>
     <tr>
-      <th><?=$r['name'];?></th>
-      <th><?=$r['district'];?></th>
-      <th><?=$r['population'];?></th>
+      <td><?=$r['name'];?></td>
+      <td><?=$r['district'];?></td>
+      <td><?=$r['population'];?></td>
     </tr>
   <?php endforeach; ?>
 <?php else: ?>
