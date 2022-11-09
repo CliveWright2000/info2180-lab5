@@ -11,10 +11,21 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
-<ul>
-<?php foreach ($results as $row): ?>
-  <li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
-<?php endforeach; ?>
-</ul>
+<table>
+  <tr>
+      <th>Name</th>
+      <th>Continent</th>
+      <th>Independence</th>
+      <th>Head of State</th>
+  </tr>
+  <?php foreach ($results as $r): ?>
+    <tr>
+      <td><?= $r['name'];?></td>
+      <td><?= $r['continent'];?></td>
+      <td><?= $r['independence_year'];?></td>
+      <td><?= $r['head_of_state'];?></td>
+    </tr>
+  <?php endforeach; ?>
+</table>
 
 
