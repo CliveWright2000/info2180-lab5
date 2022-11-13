@@ -7,6 +7,7 @@ $dbname = 'world';
 
 
 $conn = new PDO("mysql:host=$host;port=3307;dbname=$dbname;charset=utf8mb4", $username, $password);
+/*port 3306 was not allowing me to open php admin so I had to change it and this line would not run without specifying the new port*/
 $country = filter_input(INPUT_GET, 'country', FILTER_SANITIZE_STRING);
 $lookup = filter_input(INPUT_GET, 'lookup', FILTER_SANITIZE_STRING);
 
